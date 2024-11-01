@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "cakewp/simple-image-slider",
+	"version": "1.0.0",
+	"title": "Simple Image Slider",
+	"category": "widgets",
+	"description": "A simple image slider block powered by block slider.",
+	"attributes": {
+		"isNavigationUse": {
+			"type": "boolean",
+			"default": true
+		},
+		"isPaginationUse": {
+			"type": "boolean",
+			"default": true
+		},
+		"minHeight": {
+			"type": "string",
+			"default": ""
+		},
+		"images": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [
+			"full",
+			"wide"
+		]
+	},
+	"viewScript": "bs_image_slider_script",
+	"textdomain": "bs-image-slider",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
